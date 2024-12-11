@@ -51,3 +51,5 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
+
+# We will use the default.conf parameters to give inputs to our dns records 
