@@ -53,3 +53,12 @@ SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
 
 # We will use the default.conf parameters to give inputs to our dns records 
+
+# Once done we will build the image and push it to the docker hub
+
+docker build -t navieng/frontend .
+docker push navieng/frontend
+
+================================================================
+# Create a mongo container with a particular version 4 since in our project we support 4
+[ centos@workstation ~ ]$ docker run -d -p 27017:27017 mongo:4
